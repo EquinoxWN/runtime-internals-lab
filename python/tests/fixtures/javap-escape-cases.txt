@@ -1,0 +1,252 @@
+Compiled from "EscapeCases.java"
+public final class portfolio.runtimeinternalslab.escape.EscapeCases {
+  private static portfolio.runtimeinternalslab.workload.Vec lastSeen;
+
+  private static int lastX;
+
+  private static int lastY;
+
+  private portfolio.runtimeinternalslab.escape.EscapeCases();
+    LineNumberTable:
+      line 34: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0       5     0  this   Lportfolio/runtimeinternalslab/escape/EscapeCases;
+
+  public static java.util.List<portfolio.runtimeinternalslab.escape.EscapeCases$Variant> all();
+    LineNumberTable:
+      line 38: 0
+
+  public static long temporaries(int, int);
+    LineNumberTable:
+      line 50: 0
+      line 51: 9
+      line 52: 11
+      line 53: 20
+      line 54: 26
+      line 55: 45
+      line 56: 64
+      line 57: 77
+      line 52: 92
+      line 59: 98
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+         26      66     6     r   I
+         45      47     7     a   Lportfolio/runtimeinternalslab/workload/Vec;
+         64      28     8     b   Lportfolio/runtimeinternalslab/workload/Vec;
+         77      15     9     c   Lportfolio/runtimeinternalslab/workload/Vec;
+         14      84     5     i   I
+          0     100     0   ops   I
+          0     100     1  seed   I
+          9      91     2   rng   Lportfolio/runtimeinternalslab/workload/XorShift32;
+         11      89     3   acc   J
+
+  public static long branchMergeEscapes(int, int);
+    LineNumberTable:
+      line 64: 0
+      line 65: 9
+      line 66: 11
+      line 67: 20
+      line 69: 26
+      line 70: 33
+      line 72: 55
+      line 74: 74
+      line 66: 94
+      line 76: 100
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+         52       3     7     v   Lportfolio/runtimeinternalslab/workload/Vec;
+         26      68     6     r   I
+         74      20     7     v   Lportfolio/runtimeinternalslab/workload/Vec;
+         14      86     5     i   I
+          0     102     0   ops   I
+          0     102     1  seed   I
+          9      93     2   rng   Lportfolio/runtimeinternalslab/workload/XorShift32;
+         11      91     3   acc   J
+
+  public static long branchMergeFixed(int, int);
+    LineNumberTable:
+      line 81: 0
+      line 82: 9
+      line 83: 11
+      line 84: 20
+      line 87: 26
+      line 88: 33
+      line 89: 40
+      line 91: 50
+      line 92: 57
+      line 94: 64
+      line 95: 77
+      line 83: 97
+      line 97: 103
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+         40      10     7     x   I
+         47       3     8     y   I
+         26      71     6     r   I
+         57      40     7     x   I
+         64      33     8     y   I
+         77      20     9     v   Lportfolio/runtimeinternalslab/workload/Vec;
+         14      89     5     i   I
+          0     105     0   ops   I
+          0     105     1  seed   I
+          9      96     2   rng   Lportfolio/runtimeinternalslab/workload/XorShift32;
+         11      94     3   acc   J
+
+  public static long loopAccumulatorEscapes(int, int);
+    LineNumberTable:
+      line 102: 0
+      line 103: 9
+      line 104: 19
+      line 105: 28
+      line 106: 34
+      line 104: 61
+      line 108: 67
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+         34      27     5     r   I
+         22      45     4     i   I
+          0      83     0   ops   I
+          0      83     1  seed   I
+          9      74     2   rng   Lportfolio/runtimeinternalslab/workload/XorShift32;
+         19      64     3   sum   Lportfolio/runtimeinternalslab/workload/Vec;
+
+  public static long loopAccumulatorFixed(int, int);
+    LineNumberTable:
+      line 113: 0
+      line 114: 9
+      line 115: 11
+      line 116: 14
+      line 117: 23
+      line 118: 29
+      line 119: 53
+      line 120: 61
+      line 116: 71
+      line 122: 77
+      line 123: 89
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+         29      42     6     r   I
+         53      18     7  step   Lportfolio/runtimeinternalslab/workload/Vec;
+         17      60     5     i   I
+          0     107     0   ops   I
+          0     107     1  seed   I
+          9      98     2   rng   Lportfolio/runtimeinternalslab/workload/XorShift32;
+         11      96     3    sx   I
+         14      93     4    sy   I
+         89      18     5   sum   Lportfolio/runtimeinternalslab/workload/Vec;
+
+  public static long staticStoreEscapes(int, int);
+    LineNumberTable:
+      line 128: 0
+      line 129: 9
+      line 130: 11
+      line 131: 20
+      line 132: 26
+      line 133: 45
+      line 134: 50
+      line 130: 65
+      line 136: 71
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+         26      39     6     r   I
+         45      20     7     v   Lportfolio/runtimeinternalslab/workload/Vec;
+         14      57     5     i   I
+          0      89     0   ops   I
+          0      89     1  seed   I
+          9      80     2   rng   Lportfolio/runtimeinternalslab/workload/XorShift32;
+         11      78     3   acc   J
+
+  public static long staticStoreFixed(int, int);
+    LineNumberTable:
+      line 141: 0
+      line 142: 9
+      line 143: 11
+      line 144: 20
+      line 145: 26
+      line 146: 45
+      line 147: 53
+      line 148: 61
+      line 143: 76
+      line 150: 82
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+         26      50     6     r   I
+         45      31     7     v   Lportfolio/runtimeinternalslab/workload/Vec;
+         14      68     5     i   I
+          0      94     0   ops   I
+          0      94     1  seed   I
+          9      85     2   rng   Lportfolio/runtimeinternalslab/workload/XorShift32;
+         11      83     3   acc   J
+
+  static {};
+    LineNumberTable:
+      line 27: 0
+}
+Compiled from "Vec.java"
+public final class portfolio.runtimeinternalslab.workload.Vec extends java.lang.Record {
+  private final int x;
+
+  private final int y;
+
+  public portfolio.runtimeinternalslab.workload.Vec(int, int);
+    LineNumberTable:
+      line 9: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      15     0  this   Lportfolio/runtimeinternalslab/workload/Vec;
+          0      15     1     x   I
+          0      15     2     y   I
+
+  public portfolio.runtimeinternalslab.workload.Vec add(portfolio.runtimeinternalslab.workload.Vec);
+    LineNumberTable:
+      line 13: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      26     0  this   Lportfolio/runtimeinternalslab/workload/Vec;
+          0      26     1     o   Lportfolio/runtimeinternalslab/workload/Vec;
+
+  public portfolio.runtimeinternalslab.workload.Vec scale(int);
+    LineNumberTable:
+      line 18: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      20     0  this   Lportfolio/runtimeinternalslab/workload/Vec;
+          0      20     1     k   I
+
+  public final java.lang.String toString();
+    LineNumberTable:
+      line 9: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0       7     0  this   Lportfolio/runtimeinternalslab/workload/Vec;
+
+  public final int hashCode();
+    LineNumberTable:
+      line 9: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0       7     0  this   Lportfolio/runtimeinternalslab/workload/Vec;
+
+  public final boolean equals(java.lang.Object);
+    LineNumberTable:
+      line 9: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0       8     0  this   Lportfolio/runtimeinternalslab/workload/Vec;
+          0       8     1     o   Ljava/lang/Object;
+
+  public int x();
+    LineNumberTable:
+      line 9: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0       5     0  this   Lportfolio/runtimeinternalslab/workload/Vec;
+
+  public int y();
+    LineNumberTable:
+      line 9: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0       5     0  this   Lportfolio/runtimeinternalslab/workload/Vec;
+}

@@ -1,0 +1,397 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hotspot_log version='160 1' process='1' time_ms='0'>
+<compilation_log thread='1'>
+<task compile_id='465' method='portfolio.runtimeinternalslab.escape.EscapeCases branchMergeEscapes (II)J' bytes='102' count='2' backedge_count='601563' iicount='2' decompiles='1' unstable_if_traps='1' stamp='0.288'>
+<type id='1212' name='long'/>
+<type id='1211' name='int'/>
+<klass id='1388' name='portfolio.runtimeinternalslab.escape.EscapeCases' flags='17'/>
+<method id='1389' holder='1388' name='branchMergeEscapes' return='1212' arguments='1211 1211' flags='9' bytes='102' compile_id='462' compiler='c1' level='3' iicount='2'/>
+<parse method='1389' uses='2.000000' stamp='0.288'>
+<observe trap='unstable_if' count='1' total='1'/>
+<bc code='183' bci='5'/>
+<type id='1213' name='void'/>
+<klass id='1391' name='portfolio.runtimeinternalslab.workload.XorShift32' flags='17'/>
+<method id='1392' holder='1391' name='&lt;init&gt;' return='1213' arguments='1211' flags='1' bytes='24' iicount='5'/>
+<call method='1392' count='1' prof_factor='1.000000' inline='1'/>
+<klass id='1399' name='java.lang.IllegalArgumentException' flags='1'/>
+<uncommon_trap method='1392' bci='8' reason='unloaded' action='reinterpret' index='7' debug_id='0' klass='1399'/>
+<inline_success reason='inline (hot)'/>
+<parse method='1392' uses='2.000000' stamp='0.288'>
+<bc code='183' bci='1'/>
+<klass id='1218' name='java.lang.Object' flags='1'/>
+<method id='1398' holder='1218' name='&lt;init&gt;' return='1213' flags='1' bytes='1' compile_id='16' compiler='c2' level='4' iicount='1689125'/>
+<call method='1398' count='-1' prof_factor='0.400000' inline='1'/>
+<inline_success reason='inline (hot)'/>
+<parse method='1398' uses='-1.000000' stamp='0.288'>
+<parse_done stamp='0.288'/>
+</parse>
+<bc code='187' bci='8'/>
+<uncommon_trap bci='8' reason='unloaded' action='reinterpret' index='7' debug_id='0'/>
+<parse_done stamp='0.288'/>
+</parse>
+<bc code='162' bci='17'/>
+<branch target_bci='100' taken='2' not_taken='1069056' cnt='1069058.000000' prob='                0.00'/>
+<uncommon_trap bci='17' reason='predicate' action='maybe_recompile' debug_id='0'/>
+<uncommon_trap bci='17' reason='profile_predicate' action='maybe_recompile' debug_id='0'/>
+<uncommon_trap bci='17' reason='loop_limit_check' action='maybe_recompile' debug_id='0'/>
+<bc code='182' bci='21'/>
+<method id='1393' holder='1391' name='next' return='1211' flags='1' bytes='32' compile_id='155' compiler='c2' level='4' iicount='1078270'/>
+<call method='1393' count='534528' prof_factor='1.000000' inline='1'/>
+<inline_success reason='inline (hot)'/>
+<predicted_call bci='21' exact='0' klass='1391'/>
+<parse method='1393' uses='1069056.000000' stamp='0.288'>
+<parse_done stamp='0.288'/>
+</parse>
+<bc code='154' bci='30'/>
+<branch target_bci='55' taken='534958' not_taken='534098' cnt='1069056.000000' prob='                0.50'/>
+<bc code='183' bci='47'/>
+<klass id='1394' name='portfolio.runtimeinternalslab.workload.Vec' flags='17'/>
+<method id='1395' holder='1394' name='&lt;init&gt;' return='1213' arguments='1211 1211' flags='1' bytes='15' compile_id='158' compiler='c2' level='4' iicount='1672098'/>
+<call method='1395' count='267049' prof_factor='1.000000' inline='1'/>
+<inline_success reason='inline (hot)'/>
+<parse method='1395' uses='534098.000000' stamp='0.288'>
+<bc code='183' bci='1'/>
+<klass id='1236' name='java.lang.Record' flags='1025'/>
+<method id='1403' holder='1236' name='&lt;init&gt;' return='1213' flags='4' bytes='5' compile_id='148' compiler='c1' level='3' iicount='1672139'/>
+<call method='1403' count='1671587' prof_factor='0.319418' inline='1'/>
+<inline_success reason='inline (hot)'/>
+<parse method='1403' uses='534098.000000' stamp='0.288'>
+<bc code='183' bci='1'/>
+<call method='1398' count='1671628' prof_factor='0.319410' inline='1'/>
+<inline_success reason='inline (hot)'/>
+<parse method='1398' uses='534098.000000' stamp='0.288'>
+<parse_done stamp='0.288'/>
+</parse>
+<parse_done stamp='0.288'/>
+</parse>
+<parse_done stamp='0.288'/>
+</parse>
+<bc code='183' bci='69'/>
+<call method='1395' count='267478' prof_factor='1.000000' inline='1'/>
+<inline_success reason='inline (hot)'/>
+<parse method='1395' uses='534956.000000' stamp='0.288'>
+<bc code='183' bci='1'/>
+<call method='1403' count='1671587' prof_factor='0.319931' inline='1'/>
+<inline_success reason='inline (hot)'/>
+<parse method='1403' uses='534956.000000' stamp='0.288'>
+<bc code='183' bci='1'/>
+<call method='1398' count='1671628' prof_factor='0.319923' inline='1'/>
+<inline_success reason='inline (hot)'/>
+<parse method='1398' uses='534956.000000' stamp='0.288'>
+<parse_done stamp='0.288'/>
+</parse>
+<parse_done stamp='0.288'/>
+</parse>
+<parse_done stamp='0.288'/>
+</parse>
+<bc code='182' bci='80'/>
+<method id='1396' holder='1394' name='x' return='1211' flags='1' bytes='5' compile_id='150' compiler='c1' level='1' iicount='384'/>
+<call method='1396' count='534527' prof_factor='1.000000' inline='1'/>
+<inline_success reason='accessor'/>
+<predicted_call bci='80' exact='0' klass='1394'/>
+<parse method='1396' uses='1069054.000000' stamp='0.288'>
+<parse_done stamp='0.288'/>
+</parse>
+<bc code='182' bci='87'/>
+<method id='1397' holder='1394' name='y' return='1211' flags='1' bytes='5' compile_id='151' compiler='c1' level='1' iicount='1206'/>
+<call method='1397' count='534527' prof_factor='1.000000' inline='1'/>
+<inline_success reason='accessor'/>
+<predicted_call bci='87' exact='0' klass='1394'/>
+<parse method='1397' uses='1069054.000000' stamp='0.288'>
+<parse_done stamp='0.288'/>
+</parse>
+<bc code='162' bci='17'/>
+<branch target_bci='100' taken='2' not_taken='1069056' cnt='1069054.000000' prob='                0.00'/>
+<parse_done stamp='0.288'/>
+</parse>
+<loop_tree>
+<loop idx='503' >
+<loop idx='504' >
+</loop>
+</loop>
+</loop_tree>
+<eliminate_allocation type='1391'>
+<jvms bci='0' method='1389'/>
+</eliminate_allocation>
+<loop_tree>
+<loop idx='503' >
+<loop idx='504' inner_loop='1' >
+</loop>
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='503' >
+<loop idx='504' inner_loop='1' >
+</loop>
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='503' >
+<loop idx='504' inner_loop='1' >
+</loop>
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='503' >
+<loop idx='504' inner_loop='1' >
+</loop>
+</loop>
+</loop_tree>
+<regalloc attempts='1' success='1'/>
+<code_cache total_blobs='858' nmethods='465' adapters='295' free_code_cache='248447232'/>
+<task_done success='1' nmsize='608' count='2' backedge_count='602587' inlined_bytes='109' stamp='0.290'/>
+</task>
+<task compile_id='474' method='portfolio.runtimeinternalslab.escape.EscapeCases branchMergeFixed (II)J' bytes='105' count='2' backedge_count='1061888' iicount='2' decompiles='1' unstable_if_traps='1' stamp='0.538'>
+<type id='1212' name='long'/>
+<type id='1211' name='int'/>
+<klass id='1388' name='portfolio.runtimeinternalslab.escape.EscapeCases' flags='17'/>
+<method id='1389' holder='1388' name='branchMergeFixed' return='1212' arguments='1211 1211' flags='9' bytes='105' compile_id='471' compiler='c1' level='3' iicount='2'/>
+<parse method='1389' uses='2.000000' stamp='0.538'>
+<observe trap='unstable_if' count='1' total='1'/>
+<bc code='183' bci='5'/>
+<type id='1213' name='void'/>
+<klass id='1391' name='portfolio.runtimeinternalslab.workload.XorShift32' flags='17'/>
+<method id='1392' holder='1391' name='&lt;init&gt;' return='1213' arguments='1211' flags='1' bytes='24' iicount='7'/>
+<call method='1392' count='1' prof_factor='1.000000' inline='1'/>
+<klass id='1399' name='java.lang.IllegalArgumentException' flags='1'/>
+<uncommon_trap method='1392' bci='8' reason='unloaded' action='reinterpret' index='7' debug_id='0' klass='1399'/>
+<inline_success reason='inline (hot)'/>
+<parse method='1392' uses='2.000000' stamp='0.538'>
+<bc code='183' bci='1'/>
+<klass id='1218' name='java.lang.Object' flags='1'/>
+<method id='1398' holder='1218' name='&lt;init&gt;' return='1213' flags='1' bytes='1' compile_id='16' compiler='c2' level='4' iicount='2681633'/>
+<call method='1398' count='-1' prof_factor='0.285714' inline='1'/>
+<inline_success reason='inline (hot)'/>
+<parse method='1398' uses='-1.000000' stamp='0.538'>
+<parse_done stamp='0.538'/>
+</parse>
+<bc code='187' bci='8'/>
+<uncommon_trap bci='8' reason='unloaded' action='reinterpret' index='7' debug_id='0'/>
+<parse_done stamp='0.538'/>
+</parse>
+<bc code='162' bci='17'/>
+<branch target_bci='103' taken='2' not_taken='1988604' cnt='1988606.000000' prob='                0.00'/>
+<uncommon_trap bci='17' reason='predicate' action='maybe_recompile' debug_id='0'/>
+<uncommon_trap bci='17' reason='profile_predicate' action='maybe_recompile' debug_id='0'/>
+<uncommon_trap bci='17' reason='loop_limit_check' action='maybe_recompile' debug_id='0'/>
+<bc code='182' bci='21'/>
+<method id='1393' holder='1391' name='next' return='1211' flags='1' bytes='32' compile_id='155' compiler='c2' level='4' iicount='2070526'/>
+<call method='1393' count='994302' prof_factor='1.000000' inline='1'/>
+<inline_success reason='inline (hot)'/>
+<predicted_call bci='21' exact='0' klass='1391'/>
+<parse method='1393' uses='1988604.000000' stamp='0.538'>
+<parse_done stamp='0.538'/>
+</parse>
+<bc code='154' bci='30'/>
+<branch target_bci='50' taken='994184' not_taken='994420' cnt='1988604.000000' prob='                0.50'/>
+<bc code='183' bci='72'/>
+<klass id='1394' name='portfolio.runtimeinternalslab.workload.Vec' flags='17'/>
+<method id='1395' holder='1394' name='&lt;init&gt;' return='1213' arguments='1211 1211' flags='1' bytes='15' compile_id='158' compiler='c2' level='4' iicount='2664354'/>
+<call method='1395' count='994302' prof_factor='1.000000' inline='1'/>
+<inline_success reason='inline (hot)'/>
+<parse method='1395' uses='1988604.000000' stamp='0.538'>
+<bc code='183' bci='1'/>
+<klass id='1236' name='java.lang.Record' flags='1025'/>
+<method id='1403' holder='1236' name='&lt;init&gt;' return='1213' flags='4' bytes='5' compile_id='148' compiler='c1' level='3' iicount='2664403'/>
+<call method='1403' count='2663843' prof_factor='0.746374' inline='1'/>
+<inline_success reason='inline (hot)'/>
+<parse method='1403' uses='1988605.000000' stamp='0.538'>
+<bc code='183' bci='1'/>
+<call method='1398' count='2663892' prof_factor='0.746360' inline='1'/>
+<inline_success reason='inline (hot)'/>
+<parse method='1398' uses='1988606.000000' stamp='0.538'>
+<parse_done stamp='0.538'/>
+</parse>
+<parse_done stamp='0.538'/>
+</parse>
+<parse_done stamp='0.538'/>
+</parse>
+<bc code='182' bci='83'/>
+<method id='1396' holder='1394' name='x' return='1211' flags='1' bytes='5' compile_id='150' compiler='c1' level='1' iicount='384'/>
+<call method='1396' count='994302' prof_factor='1.000000' inline='1'/>
+<inline_success reason='accessor'/>
+<predicted_call bci='83' exact='0' klass='1394'/>
+<parse method='1396' uses='1988604.000000' stamp='0.538'>
+<parse_done stamp='0.538'/>
+</parse>
+<bc code='182' bci='90'/>
+<method id='1397' holder='1394' name='y' return='1211' flags='1' bytes='5' compile_id='151' compiler='c1' level='1' iicount='1206'/>
+<call method='1397' count='994302' prof_factor='1.000000' inline='1'/>
+<inline_success reason='accessor'/>
+<predicted_call bci='90' exact='0' klass='1394'/>
+<parse method='1397' uses='1988604.000000' stamp='0.539'>
+<parse_done stamp='0.539'/>
+</parse>
+<bc code='162' bci='17'/>
+<branch target_bci='103' taken='2' not_taken='1988604' cnt='1988604.000000' prob='                0.00'/>
+<parse_done stamp='0.539'/>
+</parse>
+<loop_tree>
+<loop idx='412' >
+<loop idx='413' >
+</loop>
+</loop>
+</loop_tree>
+<eliminate_allocation type='1394'>
+<jvms bci='64' method='1389'/>
+</eliminate_allocation>
+<eliminate_allocation type='1391'>
+<jvms bci='0' method='1389'/>
+</eliminate_allocation>
+<loop_tree>
+<loop idx='412' >
+<loop idx='598' inner_loop='1' >
+</loop>
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='412' >
+<loop idx='673' inner_loop='1' >
+</loop>
+</loop>
+<loop idx='493' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='412' >
+<loop idx='779' inner_loop='1' >
+</loop>
+</loop>
+<loop idx='493' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='412' >
+<loop idx='965' inner_loop='1' >
+</loop>
+</loop>
+<loop idx='493' inner_loop='1' >
+</loop>
+</loop_tree>
+<loop_tree>
+<loop idx='412' >
+<loop idx='965' inner_loop='1' >
+</loop>
+</loop>
+<loop idx='493' inner_loop='1' >
+</loop>
+</loop_tree>
+<regalloc attempts='2' success='1'/>
+<code_cache total_blobs='867' nmethods='474' adapters='295' free_code_cache='248427776'/>
+<task_done success='1' nmsize='1640' count='4' backedge_count='1078272' inlined_bytes='88' stamp='0.543'/>
+</task>
+<task compile_id='471' method='portfolio.runtimeinternalslab.escape.EscapeCases branchMergeFixed (II)J' bytes='105' count='1' backedge_count='68230' iicount='1' level='3' stamp='0.523'>
+<phase name='setup' stamp='0.523'>
+<phase_done stamp='0.523'/>
+</phase>
+<phase name='buildIR' stamp='0.523'>
+<type id='1212' name='long'/>
+<type id='1211' name='int'/>
+<klass id='1388' name='portfolio.runtimeinternalslab.escape.EscapeCases' flags='17'/>
+<method id='1389' holder='1388' name='branchMergeFixed' return='1212' arguments='1211 1211' flags='9' bytes='105' iicount='1'/>
+<parse method='1389'  stamp='0.523'>
+<phase name='parse_hir' stamp='0.523'>
+<bc code='183' bci='5'/>
+<type id='1213' name='void'/>
+<klass id='1391' name='portfolio.runtimeinternalslab.workload.XorShift32' flags='17'/>
+<method id='1392' holder='1391' name='&lt;init&gt;' return='1213' arguments='1211' flags='1' bytes='24' iicount='6'/>
+<call method='1392' instr='invokespecial'/>
+<inline_success reason='inline'/>
+<parse method='1392'>
+<bc code='183' bci='1'/>
+<klass id='1218' name='java.lang.Object' flags='1'/>
+<method id='1394' holder='1218' name='&lt;init&gt;' return='1213' flags='1' bytes='1' compile_id='16' compiler='c2' level='4' iicount='1695117'/>
+<call method='1394' instr='invokespecial'/>
+<inline_success reason='inline'/>
+<parse method='1394'>
+<parse_done stamp='0.523'/>
+</parse>
+<bc code='183' bci='14'/>
+<klass id='1219' name='java.lang.String' flags='17'/>
+<klass id='1396' name='java.lang.IllegalArgumentException' flags='1'/>
+<method id='1398' holder='1396' name='&lt;init&gt;' return='1213' arguments='1219' flags='1' bytes='6' iicount='1'/>
+<call method='1398' instr='invokespecial'/>
+<inline_fail reason='don&apos;t inline Throwable constructors'/>
+<parse_done stamp='0.523'/>
+</parse>
+<bc code='182' bci='21'/>
+<method id='1400' holder='1391' name='next' return='1211' flags='1' bytes='32' compile_id='155' compiler='c2' level='4' iicount='1087532'/>
+<call method='1400' instr='invokevirtual'/>
+<inline_success reason='inline'/>
+<parse method='1400'>
+<parse_done stamp='0.523'/>
+</parse>
+<bc code='183' bci='72'/>
+<klass id='1402' name='portfolio.runtimeinternalslab.workload.Vec' flags='17'/>
+<method id='1403' holder='1402' name='&lt;init&gt;' return='1213' arguments='1211 1211' flags='1' bytes='15' compile_id='158' compiler='c2' level='4' iicount='1684099'/>
+<call method='1403' instr='invokespecial'/>
+<inline_success reason='inline'/>
+<parse method='1403'>
+<bc code='183' bci='1'/>
+<klass id='1236' name='java.lang.Record' flags='1025'/>
+<method id='1405' holder='1236' name='&lt;init&gt;' return='1213' flags='4' bytes='5' compile_id='148' compiler='c1' level='3' iicount='1685124'/>
+<call method='1405' instr='invokespecial'/>
+<inline_success reason='inline'/>
+<parse method='1405'>
+<bc code='183' bci='1'/>
+<call method='1394' instr='invokespecial'/>
+<inline_success reason='inline'/>
+<parse method='1394'>
+<parse_done stamp='0.523'/>
+</parse>
+<parse_done stamp='0.523'/>
+</parse>
+<parse_done stamp='0.523'/>
+</parse>
+<bc code='182' bci='83'/>
+<method id='1407' holder='1402' name='x' return='1211' flags='1' bytes='5' compile_id='150' compiler='c1' level='1' iicount='384'/>
+<call method='1407' instr='invokevirtual'/>
+<inline_success reason='inline'/>
+<parse method='1407'>
+<parse_done stamp='0.523'/>
+</parse>
+<bc code='182' bci='90'/>
+<method id='1409' holder='1402' name='y' return='1211' flags='1' bytes='5' compile_id='151' compiler='c1' level='1' iicount='1206'/>
+<call method='1409' instr='invokevirtual'/>
+<inline_success reason='inline'/>
+<parse method='1409'>
+<parse_done stamp='0.523'/>
+</parse>
+<phase_done stamp='0.523'/>
+</phase>
+<parse_done stamp='0.523'/>
+</parse>
+<phase name='optimize_blocks' stamp='0.523'>
+<phase_done stamp='0.523'/>
+</phase>
+<phase name='gvn' stamp='0.523'>
+<phase_done stamp='0.523'/>
+</phase>
+<phase name='rangeCheckElimination' stamp='0.523'>
+<phase_done stamp='0.523'/>
+</phase>
+<phase name='optimize_null_checks' stamp='0.523'>
+<phase_done stamp='0.523'/>
+</phase>
+<phase_done stamp='0.523'/>
+</phase>
+<phase name='emit_lir' stamp='0.523'>
+<phase name='lirGeneration' stamp='0.523'>
+<phase_done stamp='0.523'/>
+</phase>
+<phase name='linearScan' stamp='0.523'>
+<phase_done stamp='0.524'/>
+</phase>
+<phase_done stamp='0.524'/>
+</phase>
+<phase name='codeemit' stamp='0.524'>
+<phase_done stamp='0.524'/>
+</phase>
+<phase name='codeinstall' stamp='0.524'>
+<phase_done stamp='0.524'/>
+</phase>
+<code_cache total_blobs='863' nmethods='471' adapters='295' free_code_cache='248441984'/>
+<task_done success='1' nmsize='1648' count='1' backedge_count='105783' inlined_bytes='88' stamp='0.524'/>
+</task>
+</compilation_log>
+</hotspot_log>

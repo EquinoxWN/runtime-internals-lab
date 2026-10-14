@@ -1,0 +1,20 @@
+{
+  "name": "runtime-internals-lab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Answers 'why did latency spike when nothing changed?': how the JVM, CPython and V8 really manage memory, garbage collection and compilation.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "node --test --test-timeout=60000 \"test/*.test.js\"",
+    "lint": "tsc -p tsconfig.json",
+    "churn": "node --max-old-space-size=512 src/churn.js"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.1",
+    "typescript": "7.0.2"
+  }
+}

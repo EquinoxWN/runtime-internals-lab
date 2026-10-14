@@ -1,0 +1,30 @@
+{
+  "name": "vector-churn",
+  "version": 1,
+  "xorshift32": [
+    { "seed": 1, "first": [270369, 67634689, 2647435461] },
+    { "seed": 42, "first": [11355432, 2836018348, 476557059, 3648046016, 3759983556] }
+  ],
+  "checksums": [
+    { "ops": 1, "window": 0, "seed": 42, "checksum": 107262 },
+    { "ops": 1000, "window": 0, "seed": 42, "checksum": 2630707608 },
+    { "ops": 1000, "window": 10, "seed": 42, "checksum": 1706363773 },
+    { "ops": 1000, "window": 100, "seed": 4294967295, "checksum": 166371539 },
+    { "ops": 12345, "window": 0, "seed": 123456789, "checksum": 40652556 },
+    { "ops": 100000, "window": 0, "seed": 42, "checksum": 1741143146 },
+    { "ops": 100000, "window": 1000, "seed": 42, "checksum": 1059382245 },
+    { "ops": 1000000, "window": 0, "seed": 42, "checksum": 4041745370 },
+    { "ops": 1000000, "window": 100000, "seed": 42, "checksum": 2965251129 }
+  ],
+  "bench": {
+    "ops": 1000000,
+    "seed": 42,
+    "windows": [0, 100000],
+    "repeats": 5,
+    "rounds": {
+      "java": { "warmup": 20, "rounds": 20 },
+      "node": { "warmup": 20, "rounds": 20 },
+      "python": { "warmup": 1, "rounds": 3 }
+    }
+  }
+}
