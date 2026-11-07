@@ -20,7 +20,7 @@ row; every run returns the checksum from the shared spec:
 
 ![Cross-runtime comparison: ns/op, allocated bytes and GC activity](docs/proof/bench.jpg)
 
-99 tests across the three runtimes and a clean dependency audit:
+102 tests across the three runtimes and a clean dependency audit (the image is from the M1 run with 99):
 
 ![Java, Python and JavaScript test runs and the dependency audit](docs/proof/tests.jpg)
 
@@ -114,10 +114,11 @@ logs and temp files only under the git-ignored `.tmp/`.
 ## Tests and results
 
 Full numbers, commands and analysis: [docs/results/m1.md](docs/results/m1.md).
+Quality check against the 10 engineering rules, with the mutation table: [docs/quality/2026-11-01.md](docs/quality/2026-11-01.md).
 
 | Check | Result |
 |---|---|
-| Tests (`make test`) | **99 passed** (Java 26, Python 57, JavaScript 16), 0 failed; full check run twice |
+| Tests (`make test`) | **102 passed** (Java 26, Python 60, JavaScript 16), 0 failed (99 with Python 57 in M1) |
 | Lint (`make lint`) | clean: Spotless, javac `-Xlint:all -Werror`, ruff, ruff format, mypy `--strict`, tsc `--checkJs --strict` |
 | Escape gate (`make escape`) | `pairs_agree=yes fixed_zero_alloc=4/4 escaping_still_allocate=3/3 log_eliminations_in_fixed=4/4` |
 | Cross-runtime gate (`make bench`) | `checksums_match_spec=yes runs=50 configs=10 repeats=5` |
@@ -143,8 +144,8 @@ Full numbers, commands and analysis: [docs/results/m1.md](docs/results/m1.md).
 | `ArgsTest`, `JsonTest`, `MeterTest`, `CliTest` | 3 + 2 + 2 + 5 | strict options; JSON escaping; exact allocated-byte counting; one valid result line per run, exit codes |
 | `test_churn_cli.py`, `cli.test.js` | 11 + 5 | the CPython and Node.js harnesses: result lines, bad arguments, GC meters |
 | `escape-probe.test.js` | 3 | the three V8 probe kernels compute the same result (100 random seeds) |
-| `test_spec_and_results.py` | 21 | the spec loader and result-line parser reject missing, extra, mistyped and out-of-range values |
-| `test_jitlog.py` | 8 | on a trimmed real JDK 21 log: eliminations per task, C1 tasks skipped, source lines from javap, ids scoped per task, DTDs and oversized files refused |
+| `test_spec_and_results.py` | 23 | the spec loader and result-line parser reject missing, extra, mistyped and out-of-range values |
+| `test_jitlog.py` | 9 | on a trimmed real JDK 21 log: eliminations per task, C1 tasks skipped, source lines from javap, ids scoped per task, DTDs, stray ENTITY declarations and oversized files refused |
 | `test_compare.py` | 7 | every experiment JVM is heap-capped and writes only inside `.tmp/`; the escape gates catch each kind of regression; tables |
 
 ### Test map
@@ -154,7 +155,7 @@ flowchart TB
   SP["spec/workload.json"] --> W["workload + xorshift32<br/>Java 9, Python 10, JS 8"]
   EC["escape cases"] --> EQ["same results<br/>EscapeCasesTest"] & EA["0 vs 24 B/op in the test JVM<br/>EscapeAnalysisTest"]
   H["harnesses"] --> HJ["Java CLI, args, JSON, meter: 12"] & HP["CPython harness + GC meter: 11"] & HN["Node harness + probe: 8"]
-  R["runner"] --> RV["spec + result validation: 21"] & RL["LogCompilation reader: 8"] & RG["containment + gates: 7"]
+  R["runner"] --> RV["spec + result validation: 23"] & RL["LogCompilation reader: 9"] & RG["containment + gates: 7"]
 ```
 
 ## Roadmap

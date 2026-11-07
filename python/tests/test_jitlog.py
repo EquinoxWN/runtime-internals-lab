@@ -100,3 +100,10 @@ def test_ids_are_scoped_to_the_task_that_declares_them(tmp_path: Path) -> None:
     first, second = jitlog.parse(log)
     assert first.eliminations == [jitlog.Elimination("a.Box", (jitlog.Frame("a.Box.f", 3),))]
     assert second.eliminations == [jitlog.Elimination("?", (jitlog.Frame("?", 5),))]
+
+
+def test_an_entity_declaration_without_a_doctype_is_refused_clearly(tmp_path: Path) -> None:
+    log = tmp_path / "entity.xml"
+    log.write_text('<hotspot_log>\n<!ENTITY a "aaaa">\n</hotspot_log>\n', encoding="utf-8")
+    with pytest.raises(ValueError, match="ENTITY"):
+        jitlog.parse(log)

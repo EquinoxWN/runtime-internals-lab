@@ -90,6 +90,8 @@ def test_result_lines_from_every_harness_shape_parse() -> None:
         ({"checksum": "1"}, "wrong type"),
         ({"rounds": True}, "boolean"),
         ({"rounds": 0}, "positive"),
+        ({"ops": 0}, "positive"),
+        ({"gc_count": -1}, "positive"),
         ({"workload": "other"}, "vector-churn"),
         ({"checksum": 2**32}, "32-bit"),
         ({"flags": [1]}, "strings"),
